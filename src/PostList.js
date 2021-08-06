@@ -2,14 +2,6 @@ import React, { useEffect } from "react";
 import PostListItem from "./PostListItem";
 
 function PostList({ posts, setPosts }) {
-  // let post = {
-  //   userId: 1,
-  //   id: 1,
-  //   title: "sfjskdl fsdj fsdfds",
-  //   body: "jfdsa fdja fdsakaf dfa jfds jfaj kfdsa jfds",
-  //   showComment: false
-  // };
-
   useEffect(() => {
     const updatedPosts = posts.map((post) => {
       return { ...post, showComments: false };
